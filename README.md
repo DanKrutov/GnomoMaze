@@ -3,7 +3,7 @@ Projeto pra testar minhas habilidades com JS e HTML, utilizando JQuery pra facil
 
 PRINCIPAIS TECNOLOGIAS:
 
-1-Renderizador de mapas
+1-Renderizador de mapas  
 Utilizando um array, é traduzido cada um dos seus valores para um div com estilo específico, com características próprias como colisão e cor. Assim formando um cenário completo e complexo. Exemplo: (0 = Quadrado preto, 1 = Quadrado branco)
 
 2-Personagem controlável
