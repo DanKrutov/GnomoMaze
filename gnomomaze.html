@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <style>
+            *{
+                font-family: Verdana;
+            }
+            body{
+                margin: 0px;
+            }
+            #tela{
+                background-color: rgb(0, 0, 0);
+                width: 630px;
+                height: 450px;
+                float: left;
+                margin-right: 10px;
+            }
+            .quad0{ /*CHÃO*/
+                background-color: black;
+                width: 30px;
+                height: 30px;
+                float: left;
+            }
+            .quad0:hover{
+                box-shadow: inset 0px 0px 0px 2px white;
+                box-sizing: border-box; 
+            }
+            .quad1{ /*PAREDE*/
+                background-color: white;
+                width: 30px;
+                height: 30px;
+                float: left;
+            }
+            .quad2{ /*MATO*/
+                background-color: green;
+                width: 30px;
+                height: 30px;
+                float: left;
+            }
+            .quad3{ /*AGUA*/
+                background-color: cornflowerblue;
+                width: 30px;
+                height: 30px;
+                float: left;
+                background-image: url('img/water.gif');
+                background-size:     cover;                   
+                background-repeat:   no-repeat;
+                background-position: center center; 
+            }
+            .quad4{ /*TRIGGER DE TELEPORTE*/
+                background-color: black;
+                width: 30px;
+                height: 30px;
+                float: left;
+            }
+            .quad5{ /*TRIGGER GENERICO*/
+                background-color: red;
+                width: 30px;
+                height: 30px;
+                float: left;
+            }
+            .quad6{
+                background-color: rgb(139,69,19);
+                width: 30px;
+                height: 30px;
+                float: left;
+            }
+            .flipped {
+                -moz-transform: scaleX(-1);
+                -o-transform: scaleX(-1);
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                filter: FlipH;
+                -ms-filter: "FlipH";
+            }
+
+            #minino{
+                background-color: red;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                border: 0px;
+                margin: 0px;
+                padding: 0px;
+                background-image: url('img/gnome.jpg');
+                background-size:     cover;                   
+                background-repeat:   no-repeat;
+                background-position: center center; 
+                border-radius: 5px;
+            }
+            #bot{
+                background-color: red;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                border: 0px;
+                margin: 0px;
+                padding: 0px;
+                background-image: url('img/exorc.jpg');
+                background-size:     cover;                   
+                background-repeat:   no-repeat;
+                background-position: center center; 
+                border-radius: 5px;
+            }
+            .caixa{
+                background-color: brown;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                border: 0px;
+                margin: 0px;
+                padding: 0px;
+                background-image: url('img/box.png');
+                background-size:     cover;                   
+                background-repeat:   no-repeat;
+                background-position: center center; 
+            }
+
+            #screamer{
+                background-color: red;
+                width: 630px;
+                height: 450px;
+                position: absolute;
+                border: 0px;
+                margin: 0px;
+                padding: 0px;
+                background-image: url('img/exorc.jpg');
+                background-size:     cover;                   
+                background-repeat:   no-repeat;
+                background-position: center center; 
+            }
+
+            #alerta{
+                color: greenyellow;
+                position: absolute;
+                width: 630px;
+                top:210px;
+                text-align: center;
+            }
+        </style>
+
+        <title>Gnomo Maze</title>
+    </head>
+    <body lang="pt-BR" style="background-color: grey">
+        <div id="tela">
+            <!--teste pra ver os divs na tela-->
+            <div id='minino'></div>
+            <div id='caixa'></div>
+            <div id="bot"></div>
+        </div>
+        <label>Coordenadas:</label> <button onclick="iniciaNpc()">Iniciar Bot</button><br>
+        X:<input id="coordx"></input><br>
+        Y:<input id="coordy"></input>
+
+        <script type="text/javascript" src="script/jquery-3.6.1.js"></script>
+        <script type="text/javascript" src="script/quadrado4.js"></script>
+    </body>
+</html>
